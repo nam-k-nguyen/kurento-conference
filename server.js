@@ -27,7 +27,7 @@ var http = require('http');
 
 var argv = minimist(process.argv.slice(2), {
     default: {
-        as_uri: 'https://localhost:8443/',
+        as_uri: process.env.PORT || 'https://localhost:8443/',
         ws_uri: 'wss://ec2-54-163-221-60.compute-1.amazonaws.com:8443/kurento',
     }
 });
