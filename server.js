@@ -23,11 +23,12 @@ var ws = require('ws');
 var kurento = require('kurento-client');
 var fs    = require('fs');
 var https = require('https');
+var http = require('http');
 
 var argv = minimist(process.argv.slice(2), {
     default: {
         as_uri: 'https://localhost:8443/',
-        ws_uri: 'ws://localhost:8888/kurento'
+        ws_uri: 'wss://ec2-54-163-221-60.compute-1.amazonaws.com:8443/kurento',
     }
 });
 
