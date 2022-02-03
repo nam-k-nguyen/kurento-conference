@@ -38,7 +38,7 @@ var options =
   cert: fs.readFileSync('keys/server.crt')
 };
 
-var app =  70;
+var app = express();
 
 /*
  * Definition of global variables.
