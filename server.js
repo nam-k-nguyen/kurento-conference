@@ -55,7 +55,7 @@ var noPresenterMessage = 'No active presenter. Try again later...';
  */
 var asUrl = url.parse(argv.as_uri);
 var port = asUrl.port;
-var server = http.createServer(/*options, */app).listen(process.env.PORT || port, function() {
+var server = https.createServer(options, app).listen(process.env.PORT || port, function() {
     console.log('Kurento Tutorial started');
     console.log('Open ' + url.format(asUrl) + ' with a WebRTC capable browser');
 });
