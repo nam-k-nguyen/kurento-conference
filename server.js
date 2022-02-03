@@ -382,6 +382,4 @@ function onIceCandidate(sessionId, _candidate) {
     }
 }
 
-// app.use(express.static(path.join(__dirname, 'static')));
-
-app.use(express.static(__dirname + "/static"))
+app.use(express.static(path.join(__dirname, 'static')));
