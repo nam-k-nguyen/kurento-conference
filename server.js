@@ -38,7 +38,7 @@ var options =
   cert: fs.readFileSync('keys/server.crt')
 };
 
-var app = express();
+var app =  70;
 
 /*
  * Definition of global variables.
@@ -382,4 +382,6 @@ function onIceCandidate(sessionId, _candidate) {
     }
 }
 
-app.use(express.static(path.join(__dirname, 'static')));
+// app.use(express.static(path.join(__dirname, 'static')));
+
+app.use(express.static(__dirname + "/static"))
